@@ -1,0 +1,17 @@
+Hi, 
+
+1. 	sometimes we come across issues where JS is causing the error.
+	And when we try to take screenshot,  UI will dissappear.
+
+2. 	When we try to get css/xpath selector for elements which dissappear the moment you try to inspect (ex. drop down)
+
+Example : Warning toaster, regex validation, drop down.
+
+
+You can use below method to stop UI from going to next page. This will stop JS execution and you can capture screenshot to attach it to CDET or for debugging prps.
+
+Go to "inspect element"
+go to "sources" tab in dev tools
+perform UI steps where JS script is rendering/executing
+press "command+forward slash in mac or F8 in windows" to pause the UI
+Take screenshot/ Get Xpath/css
